@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Coca-Cola</title>
+    <link rel="icon" href="logode pagina.jpg" type="image/x-icon"> <!-- Favicon -->
+    <link rel="stylesheet" href="productos.css">
+    <script src="producto.js" defer></script>
+    <!-- Incluir FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo Coca-Cola" class="logo">
+        <h1>Tienda Coca-Cola</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="#pago">Método de Pago</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2>Productos Disponibles</h2>
+            <div class="producto" data-id="1" data-precio="1.50">
+                <img src="coca.jpg" alt="Coca-Cola" class="producto-imagen">
+                <h3>Coca-Cola</h3>
+                <p>Precio: $1.50</p>
+                <input type="checkbox" class="producto-checkbox"> Seleccionar
+            </div>
+            <div class="producto" data-id="2" data-precio="1.50">
+                <img src="cocaligt.jpg" alt="Coca-Cola Light" class="producto-imagen">
+                <h3>Coca-Cola Light</h3>
+                <p>Precio: $1.50</p>
+                <input type="checkbox" class="producto-checkbox"> Seleccionar
+            </div>
+            <div class="producto" data-id="3" data-precio="1.50">
+                <img src="fanta.jpg" alt="Fanta" class="producto-imagen">
+                <h3>Fanta</h3>
+                <p>Precio: $1.50</p>
+                <input type="checkbox" class="producto-checkbox"> Seleccionar
+            </div>
+            <!-- Más productos -->
+            <div class="producto" data-id="4" data-precio="1.50">
+                <img src="sprite1.jpg" alt="Sprite" class="producto-imagen">
+                <h3>Sprite</h3>
+                <p>Precio: $1.50</p>
+                <input type="checkbox" class="producto-checkbox"> Seleccionar
+            </div>
+            <div class="producto" data-id="5" data-precio="1.75">
+                <img src="cocazero.jpg" alt="Coca-Cola Zero" class="producto-imagen">
+                <h3>Coca-Cola Zero</h3>
+                <p>Precio: $1.75</p>
+                <input type="checkbox" class="producto-checkbox"> Seleccionar
+            </div>
+            <div class="producto" data-id="6" data-precio="2.00">
+                <img src="sinazucar.jpg" alt="Coca-Cola Sin Azúcar" class="producto-imagen">
+                <h3>Coca-Cola Sin Azúcar</h3>
+                <p>Precio: $2.00</p>
+                <input type="checkbox" class="producto-checkbox"> Seleccionar
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="lista-carrito"></div>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </section>
+
+        <section id="pago">
+            <h2>Método de Pago</h2>
+            <div class='metodos-pago'>
+                <!-- Iconos junto a las opciones -->
+                <label><input type='radio' name='metodo-pago' value='visa'> 
+                    Visa 
+                    <img src='visa-icon.png' alt='Visa' width='30' height='20' style='vertical-align:middle;'>
+                </label>
+
+                <label><input type='radio' name='metodo-pago' value='yape'> 
+                    Yape 
+                    <img src='yape-icon.png' alt='Yape' width='30' height='20' style='vertical-align:middle;'>
+                </label>
+
+                <label><input type='radio' name='metodo-pago' value='paypal'> 
+                    PayPal 
+                    <img src='paypal-icon.png' alt='PayPal' width='30' height='20' style='vertical-align:middle;'>
+                </label>
+
+            </div>
+
+            <!-- Botón de Pagar -->
+            <button id='btn-pagar'>Pagar</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>Contáctanos</h3>
+        <div class='redes-sociales'>
+            <!-- Iconos de redes sociales -->
+            <a href='#' title='Facebook'><i class='fab fa-facebook'></i></a>
+            <a href='#' title='YouTube'><i class='fab fa-youtube'></i></a>
+            <a href='#' title='WhatsApp'><i class='fab fa-whatsapp'></i></a>
+        </div>
+        <p>&copy; 2024 Tienda Coca-Cola. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

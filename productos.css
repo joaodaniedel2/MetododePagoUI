@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('coca-cola-background.jpg');
+    background-size: cover;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(255, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px; /* Ajustar el tamaño del logo */
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 51px;
+    border-radius: 10px;
+}
+
+.producto {
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Tamaño uniforme para las imágenes de los productos */
+.producto-imagen {
+    width: 150px; /* Ancho fijo */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Tamaño uniforme para los iconos de métodos de pago */
+.metodos-pago img {
+    width: 30px; /* Ancho fijo para iconos */
+}
+
+/* Tamaño uniforme para los iconos de redes sociales */
+.redes-sociales a {
+   margin: 0 10px; /* Espaciado entre iconos */
+   color: white; /* Color de los iconos */
+   font-size: 24px; /* Tamaño del icono */
+   transition: color 0.3s; /* Efecto al pasar el ratón */
+}
+
+.redes-sociales a:hover {
+   color: #ffcc00; /* Color al pasar el ratón */
+}
+
+.metodos-pago label {
+   display: block;
+   margin-bottom: 10px;
+}
+
+#btn-pagar {
+   background-color:red; /* Verde */
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#btn-pagar:hover {
+   background-color: grey; /* Verde más oscuro */
+}
+
+footer {
+   text-align: center;
+   padding: 20px;
+   background-color: red;
+}
